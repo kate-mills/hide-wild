@@ -5,6 +5,20 @@ module.exports = {
     author: `Kate Mills`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Rock Salt`,
+            variants: [`400`, `500`, `700`],
+          },
+          {
+            family: `Open Sans`,
+          },
+        ],
+      },
+    },
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-react-helmet`,
     {

@@ -1,6 +1,6 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Rock+Salt&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Lato|Poppins");
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Rock+Salt&display=swap');
+*/
 
 :root {
   --primaryColor: #26653F;
@@ -33,6 +33,9 @@ body {
   background: var(--mainWhite);
   line-height: 1.4;
   font-size: 1rem;
+}
+div.logo-img{
+  font-family: 'Rock Salt', cursive;
 }
 
 h1,
