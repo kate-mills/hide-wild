@@ -1,9 +1,5 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Rock+Salt&display=swap');
-@import url("https://fonts.googleapis.com/css?family=Lato|Poppins");
-*/
-
 :root {
-  --primaryColor: #26653F;
+  --primaryColor:#877A6D;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
@@ -27,7 +23,7 @@
 }
 
 body {
-  font-family: "Antic Slab", serif;
+  font-family: 'Noto Sans', sans-serif;
   color: var(--mainBlack);
   background: var(--mainWhite);
   line-height: 1.4;
@@ -40,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rock Salt', cursive;
+  font-family: 'Noto Sans', sans-serif;
   margin-bottom: 1.25rem;
   letter-spacing: var(--mainSpacing);
 }
@@ -50,11 +46,10 @@ p {
 }
 .defaultHero {
   min-height: calc(100vh - 62px);
-  background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../images/defaultBcg.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  background:linear-gradient(rgba(213, 184, 145, .7), rgba(0,0,0,0.7)), url("../images/defaultBcg.jpg") center/cover no-repeat;
 }
 .btn-white,
 .btn-primary {

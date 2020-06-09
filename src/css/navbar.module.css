@@ -11,6 +11,10 @@ a {
   align-items: center;
   padding: 1rem 1.25rem;
 }
+.nav-header a {
+  color: var(--customTaupe);
+
+}
 .logo-img span.text{
   font-family: 'Rock Salt', cursive;
   font-size: 23px;
@@ -21,10 +25,10 @@ a {
   border: none;
   outline: none;
 }
-.logo-btn:hover {
+.logo-btn:hover { /* toggle btn */
   cursor: pointer;
 }
-.logo-icon {
+.logo-btn { /* toggle btn */
   color: var(--customTaupe);
   font-size: 1.5rem;
 }

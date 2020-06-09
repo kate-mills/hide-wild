@@ -1,15 +1,21 @@
 import React from "react"
+import {graphql} from 'gatsby'
 import Img  from "gatsby-image"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
+import SimpleHero from "../components/SimpleHero"
+import Banner from '../components/Banner'
 
 const Index = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div>
-        <Img fluid={data.file.childImageSharp.fluid} />
-      </div>
+      <SimpleHero>
+      <Banner 
+        title="Designs  by Hilary Molloy" 
+        info="Hil, lets put some informational text here."
+      />
+      </SimpleHero>
     </Layout>
   )
 }
