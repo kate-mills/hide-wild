@@ -47,6 +47,9 @@ a {
   font-weight: normal;
   letter-spacing: var(--mainSpacing);
 }
+div.logo-img:hover img { 
+  background:url('../images/icon-earrings.svg');
+}
 .nav-links a:hover, svg:hover, .logo-img:hover span {
   color: var(--customCream) !important;
   text-decoration:none;
