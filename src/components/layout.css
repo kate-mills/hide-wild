@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Poppins");
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Rock+Salt&display=swap');
+
 :root {
-  --primaryColor: #74B652;
+  --primaryColor: #26653F;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
@@ -11,8 +13,13 @@
   --mainSpacing: 4px;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
-}
 
+  --customBlue: #105D6E;
+  --customTaupe: #877A6D;
+  --customCream:#D5B891; 
+  --customGreen: #26653F;
+  --peaGreen: #A29E55;
+}
 * {
   margin: 0;
   padding: 0;
@@ -20,29 +27,33 @@
 }
 
 body {
+  /*font-family: 'Raleway', sans-serif;*/
   font-family: "Lato", sans-serif;
   color: var(--mainBlack);
   background: var(--mainWhite);
   line-height: 1.4;
   font-size: 1rem;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  /*font-family: "Poppins", sans-serif;*/
+  font-family: 'Rock Salt', cursive;
   margin-bottom: 1.25rem;
   letter-spacing: var(--mainSpacing);
 }
+
 p {
   margin-bottom: 1.25rem;
 }
 .defaultHero {
   min-height: calc(100vh - 62px);
   background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../images/defaultBcg.jpeg") center/cover no-repeat;
+    url("../images/defaultBcg.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,11 +82,6 @@ p {
 .btn-primary:hover {
   background: transparent;
   color: var(--primaryColor);
-}
-main{
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 /* .gatsby-image-wrapper {
   max-height: 600px;

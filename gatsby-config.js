@@ -5,6 +5,7 @@ module.exports = {
     author: `Kate Mills`,
   },
   plugins: [
+    `gatsby-plugin-transition-link`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
