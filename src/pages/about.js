@@ -1,16 +1,38 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import Layout from '../components/Layout'
+import { graphql } from 'gatsby'
+import StyledHero from '../components/StyledHero'
+import SEO from '../components/seo'
+import Banner from '../components/Banner'
 
-import Layout from "../components/Layout"
-import SEO from "../components/seo"
 
-const AboutPage = () => (
-  <Layout>
-    <SEO title="About" />
-    <h1>About Page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
-)
+const AboutPage  = props => {
+  return (
+    <Layout>
+      <SEO title="About" />
+      <StyledHero home img={props.data.img.childImageSharp.fluid} >
+      <Banner
+        title="About Hilary"
+        info="Hil this is just a placeholder"
+      />
+    </StyledHero>
+
+
+    </Layout>
+  )
+}
 
 export default AboutPage
+
+
+export const query = graphql`
+  query {
+    img: file(relativePath: { eq: "defaultBcg.jpg" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 4160) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
