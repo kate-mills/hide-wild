@@ -12,7 +12,7 @@ const Index = props => {
       <StyledHero home img={props.data.img.childImageSharp.fluid} >
       <Banner 
         title="Designs  by Hilary Molloy" 
-        info="Hil, we can have a little info here, with shopping options below."
+        info="Hil, We can change this and do anything!"
       >
         <Link 
           to="/jewelry"
