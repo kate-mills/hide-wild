@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const JewelryPage = () => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="Jewelry" />
     <h1>Jewelry Page</h1>
     <p>Welcome to page 2</p>
     <Link to="/">Go back to the homepage</Link>

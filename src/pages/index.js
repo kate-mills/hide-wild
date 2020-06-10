@@ -1,6 +1,5 @@
 import React from "react"
-import {graphql} from 'gatsby'
-import Img  from "gatsby-image"
+import {graphql, Link} from 'gatsby'
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import SimpleHero from "../components/SimpleHero"
@@ -13,8 +12,14 @@ const Index = ({ data }) => {
       <SimpleHero>
       <Banner 
         title="Designs  by Hilary Molloy" 
-        info="Hil, lets put some informational text here."
-      />
+        info="Hil, we can write something or nothing, maybe a little informational text here."
+      >
+        <Link 
+          to="/jewelry"
+          className="btn-white">
+          shop jewelry
+        </Link>
+      </Banner>
       </SimpleHero>
     </Layout>
   )
@@ -22,9 +27,9 @@ const Index = ({ data }) => {
 
 export const query = graphql`
   {
-    file(relativePath: {eq: "transparent-logo.png"}) {
+    file(relativePath: {eq: "defaultBcg.jpg"}) {
       childImageSharp {
-        fluid(maxWidth: 400) {
+        fluid {
           ...GatsbyImageSharpFluid
         }
       }
