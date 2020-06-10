@@ -1,5 +1,9 @@
 export default [
   {
+    path: "/",
+    text: "home",
+  },
+  {
     path: "/jewelry",
     text: "jewelry",
   },
