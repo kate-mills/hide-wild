@@ -1,15 +1,15 @@
 import React from "react"
-import {graphql, Link} from 'gatsby'
+import {Link} from 'gatsby'
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
-import SimpleHero from "../components/SimpleHero"
+import StyledHero from "../components/StyledHero"
 import Banner from '../components/Banner'
 
 const Index = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <SimpleHero>
+      <StyledHero home imgage="defaultBcg.jpg">
       <Banner 
         title="Designs  by Hilary Molloy" 
         info="Hil, we can write something or nothing, maybe a little informational text here."
@@ -20,21 +20,9 @@ const Index = ({ data }) => {
           shop jewelry
         </Link>
       </Banner>
-      </SimpleHero>
+      </StyledHero>
     </Layout>
   )
 }
-
-export const query = graphql`
-  {
-    file(relativePath: {eq: "defaultBcg.jpg"}) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
 
 export default Index

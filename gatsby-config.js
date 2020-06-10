@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Hide + Wild`,
-    description: `Custom jewelry designs by Hilary Molloy`,
+    description: `Custom jewelry designs by Hilary Molloy, located in the Napa Valley`,
     author: `Kate Mills`,
   },
   plugins: [
@@ -23,6 +23,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-react-helmet`,
     {
@@ -40,8 +41,8 @@ module.exports = {
         name: `Hide + Wild`,
         short_name: `hide+wild`,
         start_url: `/`,
-        background_color: `#74B652`,
-        theme_color: `#74B652`,
+        background_color: `#d5b891`, //customCream
+        theme_color: `#877a6d`,  //customTaupe
         display: `minimal-ui`,
         icon: `static/apple-touch-icon.png`, // This path is relative to the root of the site.
       },
