@@ -8,7 +8,7 @@ import Banner from '../components/Banner'
 const Index = props => {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Hide + Wild" />
       <StyledHero home img={props.data.img.childImageSharp.fluid} >
       <Banner 
         title="Designs  by Hilary Molloy" 
